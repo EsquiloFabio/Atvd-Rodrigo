@@ -1,0 +1,95 @@
+package Atividade;
+
+import java.util.*;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int cont;
+		Caminhao c=new Caminhao(null, 0, 0);
+		Onibus o=new Onibus(null, 0, 0);
+		ArrayList<String> junta=new ArrayList<String>();
+		ArrayList<Integer> junta1=new ArrayList<Integer>();
+		ArrayList<Integer> junta2=new ArrayList<Integer>();
+		ArrayList<Integer> junta3=new ArrayList<Integer>();
+		ArrayList<Object> tudo=new ArrayList<Object>();
+		
+		o.setPlaca("AAA-1111");
+		junta.add(o.getPlaca());
+		o.setAno(2000);
+		junta1.add(o.getAno());
+		o.setAssentos(41);
+		junta2.add(o.getAssentos());
+		
+		o.setPlaca("ABC-1234");
+		junta.add(o.getPlaca());
+		o.setAno(2005);
+		junta1.add(o.getAno());
+		o.setAssentos(45);
+		junta2.add(o.getAssentos());
+		
+		o.setPlaca("BBB-2222");
+		junta.add(o.getPlaca());
+		o.setAno(2010);
+		junta1.add(o.getAno());
+		o.setAssentos(42);
+		junta2.add(o.getAssentos());
+		
+		o.setPlaca("CCC-3333");
+		junta.add(o.getPlaca());
+		o.setAno(2015);
+		junta1.add(o.getAno());
+		o.setAssentos(43);
+		junta2.add(o.getAssentos());
+		o.setPlaca("DDD-4444");
+		junta.add(o.getPlaca());
+		o.setAno(2020);
+		junta1.add(o.getAno());
+		o.setAssentos(44);
+		junta2.add(o.getAssentos());
+		
+		
+		
+		c.setPlaca("EFG-5678");
+		junta.add(c.getPlaca());
+		c.setAno(2022);
+		junta1.add(c.getAno());
+		c.setEixos(9);
+		junta3.add(c.getEixos());
+		
+		c.setPlaca("EEE-5555");
+		junta.add(c.getPlaca());
+		c.setAno(1982);
+		junta1.add(c.getAno());
+		c.setEixos(2);
+		junta3.add(c.getEixos());
+		
+		c.setPlaca("FFF-6666");
+		junta.add(c.getPlaca());
+		c.setAno(1992);
+		junta1.add(c.getAno());
+		c.setEixos(3);
+		junta3.add(c.getEixos());
+		
+		c.setPlaca("GGG-7777");
+		junta.add(c.getPlaca());
+		c.setAno(2002);
+		junta1.add(c.getAno());
+		c.setEixos(4);
+		junta3.add(c.getEixos());
+		
+		c.setPlaca("HHH-8888");
+		junta.add(c.getPlaca());
+		c.setAno(2012);
+		junta1.add(c.getAno());
+		c.setEixos(7);
+		junta3.add(c.getEixos());
+	
+		System.out.println("A seguir todas as informacoes:");
+		
+		for(cont=0;cont<=4;cont++) {
+			System.out.println("Veiculo=Onibus"+" Placa="+junta.get(cont));		
+		}
+	}
+}
+

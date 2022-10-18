@@ -1,0 +1,37 @@
+package Atividade;
+
+public class Onibus extends Veiculo {
+	private int assentos;
+	
+	public Onibus(String placa,int ano,int assentos){
+		placa=super.getPlaca();
+		ano=super.getAno();
+		assentos=this.assentos;
+		
+	}
+
+	public int getAssentos() {
+		return assentos;
+	}
+
+	public void setAssentos(int assentos) {
+		this.assentos = assentos;
+	}
+	
+	public void busMet(String placa,int ano,int assentos) {
+		this.setPlaca(placa);
+		this.setAno(ano);
+		this.setAssentos(assentos);
+		
+	}
+
+	@Override
+	void exibirDados(String placa, int ano) {
+		
+		System.out.print("Veiculo=Onibus"+" Placa="+getPlaca()+" Ano="+getAno()+" Assentos="+getAssentos()+"\n");
+		
+		
+	}
+
+}
+

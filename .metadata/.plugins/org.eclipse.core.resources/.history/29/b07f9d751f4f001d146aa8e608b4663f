@@ -1,0 +1,68 @@
+package Atividade;
+
+import java.util.*;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int cont;
+		
+		Caminhao cam=new Caminhao(null, null, 0, 0);
+		Onibus bus=new Onibus(null, null, 0, 0);
+		
+		ArrayList<String> tipoArray=new ArrayList<String>();
+		ArrayList<String> placaArray=new ArrayList<String>();
+		ArrayList<Integer> anoArray=new ArrayList<Integer>();
+		ArrayList<Integer> assentosArray=new ArrayList<Integer>();
+		ArrayList<Integer> eixosArray=new ArrayList<Integer>();
+		
+		bus.setTipo("Onibus");
+		tipoArray.add(bus.getTipo());
+		bus.setPlaca("AAA-1111");
+		placaArray.add(bus.getPlaca());
+		bus.setAno(2000);
+		anoArray.add(bus.getAno());
+		bus.setAssentos(41);
+		assentosArray.add(bus.getAssentos());
+		bus.setTipo("Onibus");
+		tipoArray.add(bus.getTipo());
+		bus.setPlaca("ABC-1234");
+		placaArray.add(bus.getPlaca());
+		bus.setAno(2005);
+		anoArray.add(bus.getAno());
+		bus.setAssentos(45);
+		assentosArray.add(bus.getAssentos());
+		bus.setTipo("Onibus");
+		tipoArray.add(bus.getTipo());
+		bus.setPlaca("BBB-2222");
+		placaArray.add(bus.getPlaca());
+		bus.setAno(2010);
+		anoArray.add(bus.getAno());
+		bus.setAssentos(42);
+		assentosArray.add(bus.getAssentos());
+		bus.setTipo("Onibus");
+		tipoArray.add(bus.getTipo());
+		bus.setPlaca("CCC-3333");
+		placaArray.add(bus.getPlaca());
+		bus.setAno(2015);
+		anoArray.add(bus.getAno());
+		bus.setAssentos(43);
+		assentosArray.add(bus.getAssentos());
+		bus.setTipo("Onibus");
+		tipoArray.add(bus.getTipo());
+		bus.setPlaca("DDD-4444");
+		placaArray.add(bus.getPlaca());
+		bus.setAno(2020);
+		anoArray.add(bus.getAno());
+		bus.setAssentos(44);
+		assentosArray.add(bus.getAssentos());
+		
+		
+		
+		for(cont=0;cont<=4;cont++) {
+			System.out.println("Veiculo="+tipoArray.get(cont)+" Placa="+placaArray.get(cont)+" Ano="+anoArray.get(cont)
+			+" Assentos="+assentosArray.get(cont));		
+		}
+	}
+}
+

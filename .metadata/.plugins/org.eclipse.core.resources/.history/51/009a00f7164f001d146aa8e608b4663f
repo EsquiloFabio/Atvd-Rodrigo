@@ -1,0 +1,93 @@
+package Atividade;
+
+import java.util.*;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Caminhao c=new Caminhao(null, 0, 0);
+		Onibus bus=new Onibus(null, 0, 0);
+		ArrayList<Onibus> busArray=new ArrayList<Onibus>();
+		ArrayList<String> junta=new ArrayList<String>();//Armazena Placas
+		ArrayList<Integer> junta1=new ArrayList<Integer>();//Armazena Anos
+		ArrayList<Integer> junta2=new ArrayList<Integer>();//Armazena Assentos
+		ArrayList<Integer> junta3=new ArrayList<Integer>();//Armazena Eixos
+		ArrayList<Object> tudo=new ArrayList<Object>();//Armazena todas as informaçoes dos outros ArrayList
+		
+		bus.busMet("AAA", 2000, 35);
+		busArray.add(bus);
+		bus.exibirDados(null, 0);
+		
+		bus.busMet("BBB", 2005, 35);
+		busArray.add(bus);
+		bus.exibirDados(null, 0);
+		
+		bus.busMet("CCC", 2010, 35);
+		busArray.add(bus);
+		bus.exibirDados(null, 0);
+		
+		bus.busMet("DDD", 2015, 35);
+		busArray.add(bus);
+		bus.exibirDados(null, 0);
+		
+		bus.busMet("EEE", 2020, 35);
+		busArray.add(bus);
+		bus.exibirDados(null, 0);
+		
+		
+		
+		
+		c.setPlaca("EFG-5678");
+		junta.add(c.getPlaca());
+		c.setAno(2022);
+		junta1.add(c.getAno());
+		c.setEixos(9);
+		junta3.add(c.getEixos());
+		c.exibirDados(null, 0);
+		
+		c.setPlaca("EEE-5555");
+		junta.add(c.getPlaca());
+		c.setAno(1982);
+		junta1.add(c.getAno());
+		c.setEixos(2);
+		junta3.add(c.getEixos());
+		c.exibirDados(null, 0);
+		
+		c.setPlaca("FFF-6666");
+		junta.add(c.getPlaca());
+		c.setAno(1992);
+		junta1.add(c.getAno());
+		c.setEixos(3);
+		junta3.add(c.getEixos());
+		c.exibirDados(null, 0);
+		
+		c.setPlaca("GGG-7777");
+		junta.add(c.getPlaca());
+		c.setAno(2002);
+		junta1.add(c.getAno());
+		c.setEixos(4);
+		junta3.add(c.getEixos());
+		c.exibirDados(null, 0);
+		
+		c.setPlaca("HHH-8888");
+		junta.add(c.getPlaca());
+		c.setAno(2012);
+		junta1.add(c.getAno());
+		c.setEixos(7);
+		junta3.add(c.getEixos());
+		c.exibirDados(null, 0);
+		
+		//Passando tudo pra um so
+		tudo.addAll(junta);
+		tudo.addAll(junta1);
+		tudo.addAll(junta2);
+		tudo.addAll(junta3);
+
+
+	}
+	
+	
+
+}
+

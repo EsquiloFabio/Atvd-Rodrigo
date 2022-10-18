@@ -1,0 +1,64 @@
+package Atividade;
+
+import java.util.*;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Caminhao cam=new Caminhao(null, 0, 0);
+		Onibus bus=new Onibus(null, 0, 0);
+		ArrayList<Onibus> busArray=new ArrayList<Onibus>();
+		ArrayList<Caminhao> camArray = new ArrayList<Caminhao>();
+		ArrayList<Object> tudo=new ArrayList<Object>();//Armazena todas as informaçoes dos outros ArrayList
+		
+		bus.busMet("AAA", 2000, 35);
+		busArray.add(bus);
+		bus.exibirDados(null, 0);
+		bus.busMet("BBB", 2005, 35);
+		busArray.add(bus);
+		bus.exibirDados(null, 0);
+		bus.busMet("CCC", 2010, 35);
+		busArray.add(bus);
+		bus.exibirDados(null, 0);
+		bus.busMet("DDD", 2015, 35);
+		busArray.add(bus);
+		bus.exibirDados(null, 0);
+		bus.busMet("EEE", 2020, 35);
+		busArray.add(bus);
+		bus.exibirDados(null, 0);
+		
+		cam.camMet("AAA",2000,5);
+		camArray.add(cam);
+		cam.exibirDados(null, 0);
+		
+		cam.camMet("BBB",2005,5);
+		camArray.add(cam);
+		cam.exibirDados(null, 0);
+		
+		cam.camMet("CCC",2010,5);
+		camArray.add(cam);
+		cam.exibirDados(null, 0);
+		
+		cam.camMet("DDD",2015,5);
+		camArray.add(cam);
+		cam.exibirDados(null, 0);
+		
+		cam.camMet("EEE",2020,5);
+		camArray.add(cam);
+		cam.exibirDados(null, 0);
+		
+		
+		
+		//Passando tudo pra um so
+		tudo.addAll(busArray);
+		tudo.addAll(camArray);
+		
+
+
+	}
+	
+	
+
+}
+

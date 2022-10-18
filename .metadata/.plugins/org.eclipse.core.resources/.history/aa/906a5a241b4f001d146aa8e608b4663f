@@ -1,0 +1,30 @@
+package Atividade;
+
+import java.util.*;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int cont;
+		Caminhao cam=new Caminhao(null, 0, 0);
+		Onibus bus=new Onibus(null, 0, 0);
+		ArrayList<String> placaArray=new ArrayList<String>();
+		ArrayList<Integer> anoArray=new ArrayList<Integer>();
+		ArrayList<Integer> assentosArray=new ArrayList<Integer>();
+		ArrayList<Integer> eixosArray=new ArrayList<Integer>();
+		
+		bus.busMet("AAA", 0, 0);
+		placaArray.add(bus.getPlaca());
+		anoArray.add(bus.getAno());
+		assentosArray.add(bus.getAssentos());
+		
+	
+		System.out.println("A seguir todas as informacoes:");
+		
+		for(cont=0;cont<=0;cont++) {
+			System.out.println("Veiculo=Onibus"+" Placa="+placaArray.get(cont)+"Ano="+anoArray.get(cont)+"Assentos"
+			+assentosArray.get(cont));		
+		}
+	}
+}
+

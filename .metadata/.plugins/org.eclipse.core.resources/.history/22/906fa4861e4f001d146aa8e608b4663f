@@ -1,0 +1,36 @@
+package Atividade;
+
+import java.util.*;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int cont1,cont2;
+		String tipo;
+		
+		Scanner leia = new Scanner(System.in);
+		Caminhao cam=new Caminhao(null, null, 0, 0);
+		Onibus bus=new Onibus(null, null, 0, 0);
+		
+		ArrayList<String> tipoArray=new ArrayList<String>();
+		ArrayList<String> placaArray=new ArrayList<String>();
+		ArrayList<Integer> anoArray=new ArrayList<Integer>();
+		ArrayList<Integer> assentosArray=new ArrayList<Integer>();
+		ArrayList<Integer> eixosArray=new ArrayList<Integer>();
+		
+		for(cont1=0;cont1<=0;cont1++) {
+			System.out.println("Veiculo: ");
+			tipo= leia.next();
+			tipo = bus.getTipo();
+			tipoArray.add(bus.getTipo());
+		}
+		
+		
+		
+		for(cont2=0;cont2<=0;cont2++) {
+			System.out.println("Veiculo="+tipoArray.get(cont2)+" Placa="+placaArray.get(cont2)+" Ano="+anoArray.get(cont2)
+			+" Assentos="+assentosArray.get(cont2));		
+		}
+	}
+}
+

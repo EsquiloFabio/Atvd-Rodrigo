@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\elias\OneDrive\Área de Trabalho\exercicio\.metadata\.plugins\org.eclipse.jdt.core
+1372677264.index
+2127704158.index
+1865797976.index
